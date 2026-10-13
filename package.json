@@ -1,0 +1,17 @@
+{
+  "name": "@p2dev/common",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Framework-neutral P2.Dev identity, role and theme contracts",
+  "engines": { "node": ">=24" },
+  "files": ["src", "README.md", "LICENSE"],
+  "exports": {
+    "./roles": { "types": "./src/roles.d.ts", "default": "./src/roles.js" },
+    "./users": { "types": "./src/users.d.ts", "default": "./src/users.js" },
+    "./auth": { "types": "./src/auth.d.ts", "default": "./src/auth.js" },
+    "./theme.css": "./src/theme.css"
+  },
+  "scripts": { "test": "node --test", "check": "node --check src/roles.js && node --check src/users.js && node --check src/auth.js && npm test" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/P2Dev/p2dev-common.git" }
+}
