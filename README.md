@@ -13,6 +13,6 @@ import '@p2dev/common/theme.css';
 
 `verifiedCognitoAccess` expects an app-configured cryptographic verifier. The app must validate its issuer, client and token use; the helper binds the verified access-token subject to UserInfo and extracts groups. It never decodes an unverified token. Dashboard can retain its stricter ID-token check, while Tack permits Cognito's documented string `email_verified` claim using `{ allowString: true }`.
 
-Theme CSS exports neutral semantic primitives. An app can opt into the Cloud palette with `data-p2-theme="cloud"`; otherwise its standalone palette remains its own.
+Theme CSS exports neutral primitives and semantic Cloud colors for canvas, surfaces, text, actions, borders, focus and status. An app can opt into the Cloud palette with `data-p2-theme="cloud"`; otherwise its standalone palette remains its own. The selector belongs on the root `<html>` element so login and application pages can use the same colors without a flash of the other theme.
 
 Install a pinned Git commit or release tag, run `npm test`, and update each app only after its own tests pass. Public, immutable GitHub tarballs work for standalone builds without an organization credential. Avoid a floating branch dependency. Changes to role names or identity validation require a package version change and coordinated adoption.
