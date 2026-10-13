@@ -15,4 +15,4 @@ import '@p2dev/common/theme.css';
 
 Theme CSS exports neutral semantic primitives. An app can opt into the Cloud palette with `data-p2-theme="cloud"`; otherwise its standalone palette remains its own.
 
-Install a pinned Git commit or release tag, run `npm test`, and update each app only after its own tests pass. Avoid a floating branch dependency. Changes to role names or identity validation require a package version change and coordinated adoption.
+Install a pinned Git commit or release tag, run `npm test`, and update each app only after its own tests pass. Public, immutable GitHub tarballs work for standalone builds without an organization credential. Avoid a floating branch dependency. Changes to role names or identity validation require a package version change and coordinated adoption.
