@@ -1,6 +1,6 @@
 {
   "name": "@p2dev/common",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "Framework-neutral P2.Dev identity, role and theme contracts",
   "engines": { "node": ">=24" },
